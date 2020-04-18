@@ -1,0 +1,29 @@
+version: "3"
+
+services:
+  skill-up-database-service:
+    image: skill-up-bdd
+    container_name: skill-up-database
+    environment:
+      - POSTGRES_USER=${USER}
+      - POSTGRES_PASSWORD=${PASSWORD}
+      - POSTGRES_DB=${DATABASE}
+    volumes:
+      - ./init:/docker-entrypoint-initdb.d/
+      - postgresql:/var/lib/postgresql
+      - postgres_data_skillup:/var/lib/postgres/data
+    ports:
+      - '5432:5432'
+    build: '.'
+    networks:
+      - skill-up-app-network
+
+networks:
+  skill-up-app-network:
+    external: true
+  
+volumes:
+  postgresql:
+    external: true
+  postgres_data_skillup:
+    external: true
