@@ -7,8 +7,10 @@
 ## Database imagination
 
 - Conceptual Database Model
-[logo]: https://github.com/RonanGir/skill-up-bdd/blob/master/assets/skillup-mcd-1.0.0.png "Conceptual Database Model"
+![alt text][mcd]
+[mcd]: https://github.com/RonanGir/skill-up-bdd/blob/master/assets/skillup-mcd-1.0.0.png "Conceptual Database Model"
 
 
 - Database schema
-[logo]: https://github.com/RonanGir/skill-up-bdd/blob/master/assets/skillup-schema-1.0.0.png "Database schema"
+![alt text][schema]
+[schema]: https://github.com/RonanGir/skill-up-bdd/blob/master/assets/skillup-schema-1.0.0.png "Database schema"
